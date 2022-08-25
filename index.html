@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- nav bar --------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Beth Israel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Find a Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Appointments & Referrals</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                            <li><a class="dropdown-item" href="#">Chinese</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Request Translator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- slide show --------------------------------------------- -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="caroPic"
+                    src="https://www.healthcareitnews.com/sites/hitn/files/082321%20Telemed%20Harvard%20Medical%201200.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img id="caroPic" src="https://media.glassdoor.com/l/d3/59/7d/e1/our-pathology-team-2019.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img id="caroPic"
+                    src="https://www.bidmc.org/-/media/rich-text-images/beth-israel-org/bidmc-careers-join-our-team-1000x565px.jpg?h=565&thn=0&w=1000"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- scrollspy bar --------------------------------------------- -->
+    <div class="row">
+        <div class="col-4">
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#item-1">Conditions & Treatments</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-1-1">Airway, Breathing & Lung
+                        </a>
+                        <a class="nav-link ms-3 my-1" href="#item-1-2">Brain, Spine & Nervouse System</a>
+                    </nav>
+                    <a class="nav-link" href="#item-3">Centers & Departments</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-3-1">Acute Care Surgery, Trauma and Surgical Critical
+                            Care</a>
+                        <a class="nav-link ms-3 my-1" href="#item-3-2">Cancer Center</a>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                class="scrollspy-example-2" tabindex="0">
+                <div id="item-1">
+                    <h4>Conditions & Treatments</h4>
+                    <p>Specify the Conditions</p>
+                </div>
+                <div id="item-1-1">
+                    <h5>Airway, Breathing & Lung</h5>
+                    <p>Asthma is a chronic disease that affects your airways (tubes that carry air in and out of your
+                        lungs). If you have asthma, the inside walls of your airways are swollen. The inflammation makes
+                        the airways very sensitive, and they tend to react strongly to things that you are allergic to
+                        or find irritating.</p>
+                    <p>Bronchiectasis is a condition in which the bronchial tubes (airways) are thickened due to
+                        long-term inflammation and scarring. This leads to a build-up of mucus, frequent lung
+                        infections, and eventually, a decline in lung function.</p>
+                    <p>Chronic Obstructive Pulmonary Disease (COPD) is a group of lung diseases, including emphysema and
+                        chronic bronchitis. These diseases make breathing difficult. COPD can make it hard to catch your
+                        breath. Because breathing takes such hard work when you have COPD, you can become exhausted.</p>
+                </div>
+                <div id="item-1-2">
+                    <h5>Brain, Spine & Nervouse System</h5>
+                    <p>As we age, many of us develop concerns about our memory, especially when it comes to figuring out
+                        what are normal “senior moments” versus what may be the beginning of a more serious memory
+                        disorder. Alzheimer’s disease and other forms of dementia are progressive neurodegenerative
+                        diseases that usually start off slowly and worsen over time, destroying memory and other mental
+                        functions.</p>
+                    <p>A brain aneurysm (or cerebral aneurysm) is a weak area on the wall of a brain artery that
+                        balloons out and fills with blood. This bulging pocket or sac can put pressure on other parts of
+                        the brain, which may or may not cause symptoms. In some cases the weakened blood vessel may
+                        burst (rupture or bleed), spreading blood into the surrounding tissue (called a hemorrhage). Not
+                        all brain aneurysms burst or cause symptoms. Approximately 6 million people in the United States
+                        (about 1 in 50) are living with an unruptured brain aneurysm. However, nearly one third of those
+                        who have a ruptured brain aneurysm will die as a result, and more than half who survive will
+                        have some permanent disability.</p>
+                    <p>A headache is pain or discomfort in the head or face. Headaches can vary in terms of their
+                        location, intensity of pain and how frequently they occur. A migraine is a type of headache that
+                        includes symptoms other than pain. These may include nausea, lightheadedness and sensitivity to
+                        light.</p>
+                </div>
+                <div id="item-3">
+                    <h4>Centers & Departments</h4>
+
+                </div>
+                <div id="item-3-1">
+                    <h5>Acute Care Surgery, Trauma and Surgical Critical Care</h5>
+                    <p>BIDMC is a Level 1 Trauma Center that provides exceptional, state-of-the-art, multidisciplinary
+                        care for adults who require emergency surgery because of an accident (except burns) or a sudden
+                        illness. We are with our patients every step of the way.</p>
+                    <p>In fact, care often begins before the patient arrives at BIDMC's Berenson Emergency Department,
+                        one of the busiest emergency departments in the area. This attentive care continues throughout
+                        the patient's evaluation, surgery, and hospitalization; discharge planning; and follows the
+                        patient's discharge through our Acute Care Surgery Clinic.</p>
+                    <p>In addition to providing excellent, multidisciplinary care, the division conducts research,
+                        participates in the training of medical students and general surgery residents, and offers an
+                        accredited Fellowship in Surgical Critical Care.
+                </div>
+                <div id="item-3-2">
+                    <h5>Cancer <Center></Center></h5>
+                    <p>At the Cancer Center at Beth Israel Deaconess Medical Center, every single physician, researcher and staff member is tirelessly pursuing cures for cancer.</p>
+                    <p>We are determined to eradicate this challenging disease, for the individual and for humanity.</p>
+                    <p>This is the driving ethos of our Cancer Center.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- collapse -->
+
+
+
+    <script src="app.js" async defer></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
